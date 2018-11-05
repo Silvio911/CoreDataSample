@@ -13,6 +13,9 @@
 		57DB9FC4219083D6009293FB /* CoreDataSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57DB9FC2219083D6009293FB /* CoreDataSample.xcdatamodeld */; };
 		57DB9FC6219083D8009293FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DB9FC5219083D8009293FB /* Assets.xcassets */; };
 		57DB9FC9219083D8009293FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DB9FC7219083D8009293FB /* LaunchScreen.storyboard */; };
+		57DB9FD2219087A0009293FB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB9FD0219087A0009293FB /* User+CoreDataClass.swift */; };
+		57DB9FD3219087A0009293FB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB9FD1219087A0009293FB /* User+CoreDataProperties.swift */; };
+		57DB9FD5219099CF009293FB /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB9FD4219099CF009293FB /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		57DB9FC5219083D8009293FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57DB9FC8219083D8009293FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57DB9FCA219083D8009293FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57DB9FD0219087A0009293FB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		57DB9FD1219087A0009293FB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		57DB9FD4219099CF009293FB /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				57DB9FBB219083D6009293FB /* AppDelegate.swift */,
 				57DB9FBD219083D6009293FB /* ViewController.swift */,
+				57DB9FD0219087A0009293FB /* User+CoreDataClass.swift */,
+				57DB9FD1219087A0009293FB /* User+CoreDataProperties.swift */,
+				57DB9FD4219099CF009293FB /* PersistenceManager.swift */,
 				57DB9FBF219083D6009293FB /* Main.storyboard */,
 				57DB9FC5219083D8009293FB /* Assets.xcassets */,
 				57DB9FC7219083D8009293FB /* LaunchScreen.storyboard */,
@@ -140,6 +149,9 @@
 			files = (
 				57DB9FBE219083D6009293FB /* ViewController.swift in Sources */,
 				57DB9FC4219083D6009293FB /* CoreDataSample.xcdatamodeld in Sources */,
+				57DB9FD2219087A0009293FB /* User+CoreDataClass.swift in Sources */,
+				57DB9FD5219099CF009293FB /* PersistenceManager.swift in Sources */,
+				57DB9FD3219087A0009293FB /* User+CoreDataProperties.swift in Sources */,
 				57DB9FBC219083D6009293FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H283372B6R;
 				INFOPLIST_FILE = CoreDataSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H283372B6R;
 				INFOPLIST_FILE = CoreDataSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
