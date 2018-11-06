@@ -36,6 +36,7 @@ final class PersistenceManager {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
+                
                 try context.save()
                 print("Saved successfully")
             } catch {
@@ -44,6 +45,23 @@ final class PersistenceManager {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    
+    func fetch<T: NSManagedObject>(_ objectType: T.Type) -> [T] {
+        
+        let entityName = String(describing: objectType)
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+
+        do {
+          let fetchObject = try context.fetch(fetchRequest) as? [T]
+            
+            return fetchObject ?? [T]()
+        }catch {
+            print(error)
+            return [T]()
+        }        
     }
     
     

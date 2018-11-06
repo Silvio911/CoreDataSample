@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let persistenceManager: PersistenceManager
+    let persistenceManager:  PersistenceManager
     
     init(persistenceManager: PersistenceManager) {
             self.persistenceManager = persistenceManager
@@ -23,15 +23,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createUser() 
+       
+        createUser()
+        getUsers()
     }
 
+    //MARK:- Create core data object.
+    
     func createUser() {
+      
         let user = User(context: persistenceManager.context)
-        user.name = "Silvio"
+        user.name = "SBulla"
         persistenceManager.save()
     }
 
 
+    
+    func getUsers(){
+        let users = persistenceManager.fetch(User.self)
+        users.forEach({ print($0.name) })
+    }
+    
+    
 }
 
